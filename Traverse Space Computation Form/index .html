@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation with Bowditch Adjustment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h2>Traverse Computation </h2>
+
+    <div class="form-group">
+        <label for="station">Station:</label>
+        <input type="text" id="station" placeholder="Enter station (e.g., A)" class="input-field">
+        
+        <label for="bearing">Bearing:</label>
+        <input type="text" id="bearing" placeholder="Enter bearing (e.g., 203-48-34)" class="input-field">
+        
+        <label for="distance">Distance (Meters):</label>
+        <input type="text" id="distance" placeholder="Enter distance (e.g., 129.352)" class="input-field">
+        
+        <div class="button-group">
+            <button onclick="addTraverseData()" class="primary-button">Add Data</button>
+            <button onclick="clearAllData()" class="secondary-button">Clear All Data</button>
+        </div>
+    </div>
+
+    <h3>Traverse Data</h3>
+    <table id="traverseTable">
+        <thead>
+            <tr>
+                <th>Station</th>
+                <th>Bearing</th>
+                <th>Distance (Meters)</th>
+                <th>ΔN</th>
+                <th>ΔE</th>
+                <th>Northings (N)</th>
+                <th>Eastings (E)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
